@@ -26,8 +26,8 @@ __attribute__((section("__versions"))) = {
 	{ 0xc437a7d7, "univ_vwrite16" },
 	{ 0x23586c79, "univ_set_amsr" },
 	{ 0xc0f45823, "univ_map_write32" },
-	{ 0x2da418b5, "copy_to_user" },
 	{ 0xfd77a4ac, "univ_map_read16" },
+	{ 0x2da418b5, "copy_to_user" },
 	{ 0x8fd3522b, "univ_define_intlevel" },
 	{ 0x693040e1, "univ_map_write16" },
 	{ 0xe32b91aa, "univ_map_read32" },
@@ -49,4 +49,4 @@ __attribute__((section(".modinfo"))) =
 "depends=bb-sva041";
 
 
-MODULE_INFO(srcversion, "1A0640990087D0409FE316E");
+MODULE_INFO(srcversion, "0948283E29A7ADE352ED68C");
