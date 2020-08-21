@@ -42,8 +42,8 @@ void stop(void){
   mqdc32_map_clear(MQDC32_MAPN2);
 #endif
 
- // vlupodm_disable_interrupt_map(LUPOMAPN);
-  vlupodm_clear_map(LUPOMAPN);
+ //vlupodm_disable_interrupt_map(LUPOMAPN);
+ //vlupodm_clear_map(LUPOMAPN);
 
   printk("DAQ stop.\n");
   printk("\n");

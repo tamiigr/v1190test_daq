@@ -210,19 +210,21 @@ void v775_map_evt_cnt_rst(int nmap){
   univ_map_write16(V7XX_EVT_CNT_RST, &sval, nmap);
 }
 
+#if 0
+int v1X90_multi_map_dma_segdata(int dman, int n){
+  int dmacnt;
 
-//int v1X90_multi_map_dma_segdata(int dman, int n){
-//  int dmacnt;
-//
-//  univ_map_read32(V1X90_EVT_FIFO, (long *)(&dmacnt), n);
-//  dmacnt = (dmacnt & 0x0000ffff) * 4;
-//  return univ_dma_segdata(dmacnt, dman);
-//}
+  univ_map_read32(V1X90_EVT_FIFO, (long *)(&dmacnt), n);
+  dmacnt = (dmacnt & 0x0000ffff) * 4;
+  return univ_dma_segdata(dmacnt, dman);
+}
+#endif
 
 // furuno modify
 int v1X90_multi_map_dma_segdata(int ndma, int offset, int n){
   int dmacnt;
-
+//V1X90_EVT_FIFO = 0x1038
+//EVENT FIFO ref : P47
   univ_map_read32((offset+V1X90_EVT_FIFO), (long *)(&dmacnt), n);
   dmacnt = (dmacnt & 0x0000ffff) * 4;
   if(dmacnt > DMASIZE) dmacnt=DMASIZE;

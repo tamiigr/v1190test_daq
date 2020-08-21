@@ -1,1 +1,1 @@
-cmd_/home/daq/daqconfig/exp/kpsi2019/babildrv.ko := ld -m elf_i386 -m elf_i386 -r -o /home/daq/daqconfig/exp/kpsi2019/babildrv.ko /home/daq/daqconfig/exp/kpsi2019/babildrv.o /home/daq/daqconfig/exp/kpsi2019/babildrv.mod.o
+cmd_/home/daq/daqconfig/exp/v1190_test/babildrv.ko := ld -m elf_i386 -m elf_i386 -r -o /home/daq/daqconfig/exp/v1190_test/babildrv.ko /home/daq/daqconfig/exp/v1190_test/babildrv.o /home/daq/daqconfig/exp/v1190_test/babildrv.mod.o

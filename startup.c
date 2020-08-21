@@ -34,11 +34,12 @@ void map(void){
 }
 
 void startup(void){
+#if 0
   short val;
 
   /* Startup Function */
   vme_define_intlevel(INTLEVEL);
-
+#if 0
   // Output Config
   val = 0x1;
   vlupodm_outconf0_map(LUPOMAPN, val);
@@ -51,14 +52,24 @@ void startup(void){
   vlupodm_outconf3_map(LUPOMAPN, val); 
 
   vlupodm_clear_map(LUPOMAPN);
-  
+#endif
   // vlupodm_enable_interrupt_map(LUPOMAPN);
   
  // initialize V1190
 #ifdef USE_1190
+/*
+#define V1190_MAPN 3
+Just module number
+*/
   v1X90_multi_map_evt_reset(0, V1190_MAPN);
-  v1X90_multi_map_intlevel(7, 0, V1190_MAPN);
-  v1X90_multi_map_almost_full(0xffff, 0, V1190_MAPN);
+  //V1190 IRQL level is 3
+  v1X90_multi_map_intlevel(3, 0, V1190_MAPN);
+  /*
+  interrupt timming when data stored
+  interrput request release 
+  read access to output buffer
+  */
+  v1X90_multi_map_almost_full(1, 0, V1190_MAPN);
   v1X90_multi_map_cnt_reg(0x128, 0, V1190_MAPN);
 #endif
 
@@ -121,7 +132,8 @@ void startup(void){
   madc32_map_start_acq(MADC32_MAPN);
 
   /* VETO clear, start DAQ */
-  vlupodm_pulse_map(LUPOMAPN,1);
+  //vlupodm_pulse_map(LUPOMAPN,1);
+#endif
 
   printk("DAQ start.\n");
 }

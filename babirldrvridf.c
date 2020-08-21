@@ -118,6 +118,7 @@ void init_eventts(void){
  
 
 /** Initialize segment block
+ * Whis is this function ?
  */
 void init_segment(int segid){
   segmenthmp = mp;                      // Store mp for segment header

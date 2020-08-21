@@ -24,12 +24,12 @@
 #define A24 0x39
 
 #define USE_1190
-#define USE_MADC
-#define USE_MQDC
-#define USE_V260
+//#define USE_MADC
+//#define USE_MQDC
+//#define USE_V260
 
-#define DMA_MADC
-#define DMA_MQDC
+//#define DMA_MADC
+//#define DMA_MQDC
 
 /* Definitions for LUPO */
 #define LUPOADDR 0x30000000
@@ -48,7 +48,8 @@
 #define MQDC32_MAPN2     4
 
 /* Definitions for V1190 */
-#define V1190_BASE_ADR  0x11110000 // now used for KPSI2019
+//#define V1190_BASE_ADR  0x11110000 // now used for KPSI2019
+#define V1190_BASE_ADR  0x10000000 // now used for 2020/7/31 V1190 test
 #define V1190_MAP_SIZE  0x00010000
 #define V1190_MAPN 3
 

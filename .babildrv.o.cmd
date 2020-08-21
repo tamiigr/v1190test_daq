@@ -1,7 +1,7 @@
-cmd_/home/daq/daqconfig/exp/kpsi2019/babildrv.o := gcc -m32 -Wp,-MD,/home/daq/daqconfig/exp/kpsi2019/.babildrv.o.d  -nostdinc -isystem /usr/lib/gcc/i386-redhat-linux/4.1.2/include -D__KERNEL__ -Iinclude  -include include/linux/autoconf.h  -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wstrict-prototypes -Wundef -Werror-implicit-function-declaration -fno-delete-null-pointer-checks -fwrapv -Os -pipe -msoft-float -fno-builtin-sprintf -fno-builtin-log2 -fno-builtin-puts  -mpreferred-stack-boundary=2  -march=i686 -mtune=generic -mtune=generic -mregparm=3 -ffreestanding -Iinclude/asm-i386/mach-generic -Iinclude/asm-i386/mach-default -fomit-frame-pointer -g  -fno-stack-protector -Wdeclaration-after-statement -Wno-pointer-sign   -DMODULE -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(babildrv)"  -D"KBUILD_MODNAME=KBUILD_STR(babildrv)" -c -o /home/daq/daqconfig/exp/kpsi2019/.tmp_babildrv.o /home/daq/daqconfig/exp/kpsi2019/babildrv.c
+cmd_/home/daq/daqconfig/exp/v1190_test/babildrv.o := gcc -m32 -Wp,-MD,/home/daq/daqconfig/exp/v1190_test/.babildrv.o.d  -nostdinc -isystem /usr/lib/gcc/i386-redhat-linux/4.1.2/include -D__KERNEL__ -Iinclude  -include include/linux/autoconf.h  -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Wstrict-prototypes -Wundef -Werror-implicit-function-declaration -fno-delete-null-pointer-checks -fwrapv -Os -pipe -msoft-float -fno-builtin-sprintf -fno-builtin-log2 -fno-builtin-puts  -mpreferred-stack-boundary=2  -march=i686 -mtune=generic -mtune=generic -mregparm=3 -ffreestanding -Iinclude/asm-i386/mach-generic -Iinclude/asm-i386/mach-default -fomit-frame-pointer -g  -fno-stack-protector -Wdeclaration-after-statement -Wno-pointer-sign   -DMODULE -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(babildrv)"  -D"KBUILD_MODNAME=KBUILD_STR(babildrv)" -c -o /home/daq/daqconfig/exp/v1190_test/.tmp_babildrv.o /home/daq/daqconfig/exp/v1190_test/babildrv.c
 
-deps_/home/daq/daqconfig/exp/kpsi2019/babildrv.o := \
-  /home/daq/daqconfig/exp/kpsi2019/babildrv.c \
+deps_/home/daq/daqconfig/exp/v1190_test/babildrv.o := \
+  /home/daq/daqconfig/exp/v1190_test/babildrv.c \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/modversions.h) \
@@ -446,36 +446,36 @@ deps_/home/daq/daqconfig/exp/kpsi2019/babildrv.o := \
   include/asm/uaccess.h \
     $(wildcard include/config/x86/intel/usercopy.h) \
     $(wildcard include/config/x86/wp/works/ok.h) \
-  /home/daq/daqconfig/exp/kpsi2019/bbuniverse.h \
-  /home/daq/daqconfig/exp/kpsi2019/bbmodules.h \
-  /home/daq/daqconfig/exp/kpsi2019/./segidlist.h \
-  /home/daq/daqconfig/exp/kpsi2019/babilctrl.h \
-  /home/daq/daqconfig/exp/kpsi2019/def-univ.h \
-  /home/daq/daqconfig/exp/kpsi2019/bb-vme.h \
-  /home/daq/daqconfig/exp/kpsi2019/babildrv.h \
-  /home/daq/daqconfig/exp/kpsi2019/babilio.h \
-  /home/daq/daqconfig/exp/kpsi2019/babirldrvdef.h \
-  /home/daq/daqconfig/exp/kpsi2019/babirldrvridf.c \
-  /home/daq/daqconfig/exp/kpsi2019/univfunc.c \
-  /home/daq/daqconfig/exp/kpsi2019/babirldrvcaen.c \
-  /home/daq/daqconfig/exp/kpsi2019/babirldrvcaen.h \
-  /home/daq/daqconfig/exp/kpsi2019/v1190.h \
-  /home/daq/daqconfig/exp/kpsi2019/madc32.c \
-  /home/daq/daqconfig/exp/kpsi2019/madc32.h \
-  /home/daq/daqconfig/exp/kpsi2019/mqdc32.c \
-  /home/daq/daqconfig/exp/kpsi2019/mqdc32.h \
-  /home/daq/daqconfig/exp/kpsi2019/rpv130.c \
-  /home/daq/daqconfig/exp/kpsi2019/rpv130.h \
-  /home/daq/daqconfig/exp/kpsi2019/tmb2.c \
-  /home/daq/daqconfig/exp/kpsi2019/tmb2.h \
-  /home/daq/daqconfig/exp/kpsi2019/vlupomap.c \
-  /home/daq/daqconfig/exp/kpsi2019/vlupo.h \
-  /home/daq/daqconfig/exp/kpsi2019/sca.c \
-  /home/daq/daqconfig/exp/kpsi2019/startup.c \
-  /home/daq/daqconfig/exp/kpsi2019/evt.c \
-  /home/daq/daqconfig/exp/kpsi2019/stop.c \
-  /home/daq/daqconfig/exp/kpsi2019/clear.c \
+  /home/daq/daqconfig/exp/v1190_test/bbuniverse.h \
+  /home/daq/daqconfig/exp/v1190_test/bbmodules.h \
+  /home/daq/daqconfig/exp/v1190_test/./segidlist.h \
+  /home/daq/daqconfig/exp/v1190_test/babilctrl.h \
+  /home/daq/daqconfig/exp/v1190_test/def-univ.h \
+  /home/daq/daqconfig/exp/v1190_test/bb-vme.h \
+  /home/daq/daqconfig/exp/v1190_test/babildrv.h \
+  /home/daq/daqconfig/exp/v1190_test/babilio.h \
+  /home/daq/daqconfig/exp/v1190_test/babirldrvdef.h \
+  /home/daq/daqconfig/exp/v1190_test/babirldrvridf.c \
+  /home/daq/daqconfig/exp/v1190_test/univfunc.c \
+  /home/daq/daqconfig/exp/v1190_test/babirldrvcaen.c \
+  /home/daq/daqconfig/exp/v1190_test/babirldrvcaen.h \
+  /home/daq/daqconfig/exp/v1190_test/v1190.h \
+  /home/daq/daqconfig/exp/v1190_test/madc32.c \
+  /home/daq/daqconfig/exp/v1190_test/madc32.h \
+  /home/daq/daqconfig/exp/v1190_test/mqdc32.c \
+  /home/daq/daqconfig/exp/v1190_test/mqdc32.h \
+  /home/daq/daqconfig/exp/v1190_test/rpv130.c \
+  /home/daq/daqconfig/exp/v1190_test/rpv130.h \
+  /home/daq/daqconfig/exp/v1190_test/tmb2.c \
+  /home/daq/daqconfig/exp/v1190_test/tmb2.h \
+  /home/daq/daqconfig/exp/v1190_test/vlupomap.c \
+  /home/daq/daqconfig/exp/v1190_test/vlupo.h \
+  /home/daq/daqconfig/exp/v1190_test/sca.c \
+  /home/daq/daqconfig/exp/v1190_test/startup.c \
+  /home/daq/daqconfig/exp/v1190_test/evt.c \
+  /home/daq/daqconfig/exp/v1190_test/stop.c \
+  /home/daq/daqconfig/exp/v1190_test/clear.c \
 
-/home/daq/daqconfig/exp/kpsi2019/babildrv.o: $(deps_/home/daq/daqconfig/exp/kpsi2019/babildrv.o)
+/home/daq/daqconfig/exp/v1190_test/babildrv.o: $(deps_/home/daq/daqconfig/exp/v1190_test/babildrv.o)
 
-$(deps_/home/daq/daqconfig/exp/kpsi2019/babildrv.o):
+$(deps_/home/daq/daqconfig/exp/v1190_test/babildrv.o):
