@@ -1,7 +1,7 @@
 #define SEGIDGEN(device,focal,detector,module) ((((device<<6 | focal) << 6) | detector)<<8 | module)    
 
 #include "./segidlist.h"
-#define EFN 94
+#define EFN 10
 
 #define BBRL
 //#define MAXBUFF    8192

@@ -11,6 +11,7 @@
 #define FOOTER_DATA 0xffffffff
 
 void evt(void){
+  //  vme_read_intvector();
   /* Event */
   init_event();
 
@@ -24,7 +25,11 @@ void evt(void){
 */
   init_segment(MKSEGID(RCNPEN,F3,SSDT,V1190));
   v1X90_map_dma_segdata(V1190_MAPN);
+  //  printk("v1190 read \n");
   end_segment(); 
+
 #endif
+
+  //  end_event();
 
 }
