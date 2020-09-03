@@ -24,6 +24,8 @@
 #define A24 0x39
 
 #define USE_1190
+#define USE_2495
+
 //#define USE_MADC
 //#define USE_MQDC
 //#define USE_V260
@@ -59,3 +61,7 @@
 #define V260_ADR     0x666600
 #define V260_REGSIZE   0x2000
 
+/* Definitios for V2495 FPGA */
+#define V2495_BASE_ADR 0x20000000
+#define V2495_MAP_SIZE 0x00010000
+#define V2495_MAPN     7

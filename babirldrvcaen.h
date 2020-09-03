@@ -116,3 +116,6 @@
 #define V260_NCH            16
 #define V260_CLEAR          0x50
 #define V260_COUNTER_0      0x10
+
+/* V2495 FPGA */
+#define V2495_OUT           0x1000

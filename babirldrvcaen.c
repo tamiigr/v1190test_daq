@@ -326,4 +326,13 @@ int v260_map_ridf_nscaler(int nmap){
   return scrsize;
 }
 
+/* functions for V2495 */
+void v2495_out(int nmap){
+  short sval;
+  sval = 1;
+  univ_map_write16(V2495_OUT, &sval, nmap);
+  sval = 0;
+  univ_map_write16(V2495_OUT, &sval, nmap);
+}
+
 #endif
